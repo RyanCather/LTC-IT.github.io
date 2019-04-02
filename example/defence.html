@@ -1,0 +1,106 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>Department of Defence | Your Gov</title>
+    <!-- InstanceEndEditable -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="stylesheet" href="CSS/styles.css" type="text/css">
+	<link rel="icon" href="Images/favicon.ico" type="image/icon">
+	<script type="text/javascript" src="JavaScript/scripts.js"></script>
+	<script type="text/javascript" src="JavaScript/defence.js"></script>
+</head>
+
+<body>
+	<!-- Site Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light">
+		<img src="Images/goverment-logo.svg" class="logo-response" alt="Government Generic Logo">
+		<a class="navbar-brand" href="index.html">Your Gov</a>
+  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+	</button>
+		<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+				<li class="nav-item">
+					<a class="nav-link text-center" href="index.html" id="portal">Portal <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-center" href="defence.html">Department of Defence</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-center" href="enviroment.html">Department of Enviroment & Energy</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-center" href="communication.html">Department of Communication & The Arts</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-center" href="humanservices.html">Department of Human Services</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-center" href="parliamenthouse.html">Parliament House</a>
+				</li>
+			</ul>
+		</div>
+    </nav>
+	<!-- Government Department Logo -->
+	<!-- InstanceBeginEditable name="departmentLogo" -->
+	<div class="container-fluid text-center"> 
+		<img src="Images/defence-logo.svg" class="img-fluid" alt="Departmen of Defence Logo">
+	</div>
+	<!-- InstanceEndEditable -->
+	<!-- Main Content -->
+	<!-- InstanceBeginEditable name="mainContent" -->
+    <div class="container-fluid">
+	  <h1 class="h1 font-weight-bold">Welcome to the Department of Defence</h1>
+	</div>
+	<div class="container-fluid">
+		<div class="card">
+			<div class="card-body">
+				<div class="card-title">
+					<h2>About Us</h2>
+				</div>
+				<p class="card-text">The Department of Defence is responsible for looking after the safety of Australia and providing aid to countries and citizens in need. They conduct operations to protect our borders and conduct foregin aid missions. The Australian Defence Force (ADF) serves the Government and is accountable to the Commonwealth Parliament. The ADF consists of the Army, Navy and the Air Force. Some matters the deparment deals with are:</p>
+				<ul class="list-group">
+					<li class="list-group-item">International defence relations and defence cooperation.</li>
+					<li class="list-group-item">Defence Scientific research and development.</li>
+					<li class="list-group-item">Defence procurement and purchasing.</li>
+					<li class="list-group-item">Defence indusry development and co-operation.</li>
+				</ul>
+				<p>The Defence White Paper was released on 25 Feburary 2016 together with an Integrated Investment Program and Defence Industry Policy Statement. Defence White Papers are the Government's most important guidance about Australia's long-term defence capability. They provide an opportunity for the Government and community to understand the opportunities and challenges for Australia's future defence and security needs. The White Paper provides a strategy aligned with capability and resources to deliver a future force that is more capable, agile and potent and ready to respond to future challenges.</p>
+				<p class="source"><a href="http://www.defence.gov.au/AboutUs.asp" target="_blank">Source</a></p>
+			</div>
+		</div>
+	</div>
+	<br>
+	<!-- Missle Launcher Section -->
+	<div class="container-fluid">
+		<div class="card text-white bg-danger mb-3 defence mx-auto">
+			<div class="card-header text-center font-weight-bold">
+				Missile Launcher
+			</div>
+			<div class="card-body">
+				<p>Click the button below to launch the missile.<br>
+				NOTE! You need to enter the 4 digit code for the button to work!</p>
+				<form id="pinForm" novalidate onSubmit="return submitHandler()">
+					<div class="form-row">
+						<input type="number" class="form-control" id="pin" placeholder="0000">
+						<p id="pinError" class="font-weight-bold"></p>
+					</div>
+					<div class="form-row">
+						<button type="button" class="btn btn-warning btn-block" onClick="checkPin()">Click me!</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+    <!-- InstanceEndEditable -->
+	<!-- Site Footer -->
+	<footer class="footer">
+		<p>Copyright © Your.Gov 2018. Designed by Anwar Hamill</p>
+	</footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+<!-- InstanceEnd --></html>

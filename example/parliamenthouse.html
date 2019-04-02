@@ -1,0 +1,177 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>Parliament House | Your Gov</title>
+    <!-- InstanceEndEditable -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="stylesheet" href="CSS/styles.css" type="text/css">
+	<link rel="icon" href="Images/favicon.ico" type="image/icon">
+	<script type="text/javascript" src="JavaScript/scripts.js"></script>
+	<script type="text/javascript" src="JavaScript/parliament.js"></script>
+</head>
+
+<body>
+	<!-- Site Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light">
+		<img src="Images/goverment-logo.svg" class="logo-response" alt="Government Generic Logo">
+		<a class="navbar-brand" href="index.html">Your Gov</a>
+  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+	</button>
+		<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+				<li class="nav-item">
+					<a class="nav-link text-center" href="index.html" id="portal">Portal <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-center" href="defence.html">Department of Defence</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-center" href="enviroment.html">Department of Enviroment & Energy</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-center" href="communication.html">Department of Communication & The Arts</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-center" href="humanservices.html">Department of Human Services</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-center" href="parliamenthouse.html">Parliament House</a>
+				</li>
+			</ul>
+		</div>
+    </nav>
+	<!-- Government Department Logo -->
+	<!-- InstanceBeginEditable name="departmentLogo" -->
+	<div class="cointainer-fluid"> 
+		<img src="Images/parliament-house-logo.png" class="img-fluid mx-auto d-block parliament" alt="Parliament House Logo">
+	</div>
+	<!-- InstanceEndEditable -->
+	<!-- Main Content -->
+	<!-- InstanceBeginEditable name="mainContent" -->
+    <!-- About Us Section -->
+	<div class="container-fluid">
+	  <h1 class="h1 font-weight-bold">Welcome to Parliament House</h1>
+	</div>
+	<div class="container-fluid">
+		<div class="card">
+			<div class="card-body">
+				<div class="card-title">
+					<h2 class="h2">About Us</h2>
+				</div>
+				<p class="card-text">Parliament House is the home of Australian politics. There are two houses where laws and other important issues are debated. These are the <a href="#" class="current-page green font-weight-bold">The House of Representatives</a> (Green House) and <a href="#" class="current-page red font-weight-bold">The Senate</a> (Red House). For bills to be passed, it has to progress through the House of Representatives first, then through The Senate before the Governor General signs off. While the bill is being passed through the houses, it can undergo several changes before it is presented to the Governor General.</p>
+				<div class="card-subtitle">
+					<h2 class="h2">Electing Members for the House of Representatives</h2>
+				</div>
+				<p class="card-text">Section 28 of the Australian Constitution states that House of Representatives elections must be held at least every three years. The Prime Minister decides the date for an election. This could be at any time during the three-year term.</p>
+				<p class="card-text">There are 150 members elected to the House of Representatives—one for each of Australia's 150 electorates. An average of 150 000 citizens live in each electorate, with an average of 100 000 voters.</p>
+				<p class="card-text">Each member is elected using a system of preferential voting, designed to elect a single member with an absolute majority for each electorate. Using this system, voters write a number in the box beside every name on the ballot-paper; '1' for their first preference, '2' for their second preference and so on, until all the boxes are numbered. If a candidate gains an absolute majority (more than half) of first preference votes, they win the seat. If no candidate receives an absolute majority, the candidate with the least number of votes is excluded and their votes are redistributed according to second preferences. The process of redistributing votes according to preferences continues until one candidate receives more than 50% of the vote and is then elected.</p>
+				<p class="source"><a href="https://www.peo.gov.au/learning/fact-sheets/federal-elections.html" target="_blank">Source</a></p>
+				<a id="Vote"></a>
+				<div class="card-subtitle">
+					<h2 class="h2">Online Ballet - How to Vote</h2>
+				</div>
+				<p class="card-text">This year the Australian Government is trialing an online voting system. You will find below an online voting form. You must rank the candidates from one (1) to four (4). One (1) being the person you want to be Prime Minister <strong>the most</strong>, and four (4) the person you want to be Prime Minister <strong>the least.</strong> After you have completed the form, click on sumbit and your votes will be recorded in the Australian Electoral Commission (AEC) system. <strong class="red">Your full name, date of birth and email address is required so the AEC knows that you have voted, hence you will not recieve a fine.</strong></p>
+			</div>
+		</div>
+	</div>
+	<!-- Voting Form Section -->
+	<div class="container-fluid">
+		<h3 class="h3">Voting Form</h3>
+		<p>Order the candidates from one (1) to four (4) with one (1) being the person you want to be Prime Minister the most, and four (4) being the person you want to be Prime Minister the least. If you have any issues, contact the Australian Electoral Commision or view the <a href="#Vote">How to Vote</a> Section above.</p>
+		<form class="parliament-form" id="electionForm" onSubmit="return submitHandler()">
+			<div class="form-row">
+				<div class="col-sm-12 text-center">
+					<h3>Australian Federal Election Voting Form 2018</h3>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-sm-6">
+					<label for="name">Name:</label>
+					<input type="text" class="form-control" placeholder="Full Name" id="name" required>
+					<p id="nameError" class="size-14"></p>
+				</div>
+				<div class="form-group col-sm-4">
+					<label for="email">Email:</label>
+					<input type="text" class="form-control" placeholder="Email" id="email" required>
+					<p id="emailError" class="size-14"></p>
+				</div>
+				<div class="form-group col-sm-2">
+					<label for="dob">DOB:</label>
+					<input type="date" class="form-control" placeholder="Date of Birth" id="DOB" required>
+					<p id="DOBError" class="size-14"></p>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-sm-12">
+					<label for="candidate1">1st Preference</label>
+					<select id="candidate1" class="form-control" required>
+						<option selected value="0">Select one...</option>
+						<option value="1">James Billard</option>
+						<option value="2">Anita Wallace</option>
+						<option value="3">Lachlan Campbell</option>
+						<option value="4">Stephanie Wheeler</option>
+					</select>
+					<p id="candidate1Error" class="size-14"></p>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-sm-12">
+					<label for="candidate2">2nd Preference</label>
+					<select id="candidate2" class="form-control" required>
+						<option selected value="0">Select one...</option>
+						<option value="1">James Billard</option>
+						<option value="2">Anita Wallace</option>
+						<option value="3">Lachlan Campbell</option>
+						<option value="4">Stephanie Wheeler</option>
+					</select>
+					<p id="candidate2Error" class="size-14"></p>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-sm-12">
+					<label for="candidate3">3rd Preference</label>
+					<select id="candidate3" class="form-control" required>
+						<option selected value="0">Select one...</option>
+						<option value="1">James Billard</option>
+						<option value="2">Anita Wallace</option>
+						<option value="3">Lachlan Campbell</option>
+						<option value="4">Stephanie Wheeler</option>
+					</select>
+					<p id="candidate3Error" class="size-14"></p>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col-sm-12">
+					<label for="candidate4">4th Preference</label>
+					<select id="candidate4" class="form-control" required>
+						<option selected value="0">Select one...</option>
+						<option value="1">James Billard</option>
+						<option value="2">Anita Wallace</option>
+						<option value="3">Lachlan Campbell</option>
+						<option value="4">Stephanie Wheeler</option>
+					</select>
+					<p id="candidate4Error" class="size-14"></p>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="col-sm text-center">
+					<button type="submit" class="btn btn-success col-sm-1 text-center" onClick="validateElectionForm()">Submit Votes</button>
+					<div class="alert alert-success" role="alert" id="candidateSuccess" style="display: none"></div>
+					<div class="alert alert-danger" role="alert" id="candidateError" style="display: none"></div>
+				</div>
+			</div>
+		</form>
+	</div>
+    <!-- InstanceEndEditable -->
+	<!-- Site Footer -->
+	<footer class="footer">
+		<p>Copyright © Your.Gov 2018. Designed by Anwar Hamill</p>
+	</footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+<!-- InstanceEnd --></html>

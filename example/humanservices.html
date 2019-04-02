@@ -1,0 +1,188 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
+<head>
+<meta charset="utf-8">
+    <!-- InstanceBeginEditable name="doctitle" -->
+    <title>Department of Human Services | Your Gov</title>
+    <!-- InstanceEndEditable -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="stylesheet" href="CSS/styles.css" type="text/css">
+	<link rel="icon" href="Images/favicon.ico" type="image/icon">
+	<script type="text/javascript" src="JavaScript/scripts.js"></script>
+	<script type="text/javascript" src="JavaScript/humanservices.js"></script>
+</head>
+
+<body onLoad="items()">
+	<!-- Site Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light">
+		<img src="Images/goverment-logo.svg" class="logo-response" alt="Government Generic Logo">
+		<a class="navbar-brand" href="index.html">Your Gov</a>
+  	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+	</button>
+		<div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+			<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+				<li class="nav-item">
+					<a class="nav-link text-center" href="index.html" id="portal">Portal <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-center" href="defence.html">Department of Defence</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-center" href="enviroment.html">Department of Enviroment & Energy</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-center" href="communication.html">Department of Communication & The Arts</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-center" href="humanservices.html">Department of Human Services</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link text-center" href="parliamenthouse.html">Parliament House</a>
+				</li>
+			</ul>
+		</div>
+    </nav>
+	<!-- Government Department Logo -->
+	<!-- InstanceBeginEditable name="departmentLogo" -->
+	<div class="container-fluid text-center"> 
+		<img src="Images/dhs-logo.png" class="img-fluid" alt="Department of Human Services Logo">
+	</div>
+	<!-- InstanceEndEditable -->
+	<!-- Main Content -->
+	<!-- InstanceBeginEditable name="mainContent" -->
+    <!-- About Us Section -->
+	<div class="container-fluid">
+	  <h1 class="h1">Welcome to the Department of Human Services</h1>
+	</div>
+	<div class="container-fluid">
+		<div class="card">
+			<div class="card-body">
+				<div class="card-title">
+					<h2>About Us</h2>
+				</div>
+				<p class="card-text">The Department of Human Servives oversees 4 services. They oversee:</p>
+				<ul class="list-group text-center">
+					<li class="list-group-item list-group-item-success">
+						<strong>Australian Hearing</strong><br>
+						Provides hearing services for Australia.
+					</li>
+					<li class="list-group-item list-group-item-success">
+						<strong>Centerlink</strong><br>
+						A Departmental Master Program administering the Australian Government's income support system.
+					</li>
+					<li class="list-group-item list-group-item-success">
+						<strong>Child Support</strong><br>
+						A Departmental master program providing support to separated parents.
+					</li>
+					<li class="list-group-item list-group-item-success">
+						<strong>Medicare Australia</strong><br>
+						A Departmental master program delivering health programs to Australians.
+					</li>
+				</ul>
+				
+				<p class="source"><a href="https://en.wikipedia.org/wiki/Department_of_Human_Services_(Australia)" target="_blank">Source</a></p>
+			</div>
+		</div>
+	</div>
+	<br>
+	<!-- Personal Medical Records Section -->
+	<div class="container-fluid">
+		<h3 class="h3">Personal Medical Records</h3>
+		<p>Below you can check your personal medical records. You can also update any inaccurate information.</p>
+	</div>
+	<div class="container-fluid">
+		<form onSubmit="return submitHandler()">
+			<div class="form-row">
+				<div class="col-sm-4">
+					<label class="font-weight-bold">First Name:</label>
+					<input id="personFirstName" type="text" class="form-control" placeholder="First Name" value="">
+				</div>
+				<div class="col-sm-4">
+					<label class="font-weight-bold">Last Name:</label>
+					<input id="personLastName" type="text" class="form-control" placeholder="Last Name" value="">
+				</div>
+				<div class="col-sm-4">
+					<label class="font-weight-bold">Email:</label>
+					<input id="personEmail" type="email" class="form-control" placeholder="Email Address" value="">
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="col-sm-2">
+					<label class="font-weight-bold">Date of Birth:</label>
+					<input id="personDOB" type="date" class="form-control" placeholder="dd/mm/yyyy" value="">
+				</div>
+				<div class="col-sm-10">
+					<label class="font-weight-bold">Address:</label>
+					<input id="personAddress" type="text" class="form-control" placeholder="Address" value="">
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="col-sm-3">
+					<label class="font-weight-bold">Gender:</label>
+					<fieldset class="form-group">
+						<div class="form-row">
+							<div class="form-check-inline">
+								<input id="personMale" type="radio" class="form-check-input" value="">
+								<label class="form-check-label" for="personGender">Male</label>
+							</div>
+							<div class="form-check-inline">
+								<input id="personFemale" type="radio" class="form-check-input" value="">
+								<label class="form-check-label" for="personGender2">Female</label>
+							</div>
+							<div class="form-check-inline">
+								<input id="personOther" type="radio" class="form-check-input" value="">
+								<label class="form-check-label" for="personGender3">Other</label>
+							</div>
+						</div>
+					</fieldset>	
+				</div>
+				<div class="col-sm-3">
+					<label class="font-weight-bold">Username:</label>
+					<input id="personUsername" type="text" class="form-control" placeholder="Username" value=""> 
+				</div>
+				<div class="col-sm-3">
+					<label class="font-weight-bold">Password:</label>
+					<input id="personPassword" type="password" class="form-control" placeholder="Password" value="">
+				</div>
+				<div class="col-sm-3">
+					<label class="font-weight-bold">Home Phone Number:</label>
+					<input id="personHomePhoneNumber" type="tel" class="form-control" placeholder="Home Number" value="" maxlength="14">
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="col-sm-3">
+					<label class="font-weight-bold">Mobile Number:</label>
+					<input id="personMobileNumber" type="tel" class="form-control" placeholder="Mobile Number" value="" maxlength="12">
+				</div>
+				<div class="col-sm-3">
+					<label class="font-weight-bold">Medicare Number:</label>
+					<input id="personMedicareNumber" type="number" class="form-control" placeholder="Medicare Number" value="" maxlength="12">
+				</div>
+				<div class="col-sm-3">
+					<label class="font-weight-bold">Private Healthcare Number:</label>
+					<input id="personPrivateHealthNumber" type="number" class="form-control" placeholder="Private Healthcare Number" value="" maxlength="10">
+				</div>
+				<div class="col-sm-3">
+					<label class="font-weight-bold">Local GP's Name:</label>
+					<input id="personGPName" type="text" class="form-control" placeholder="Your GP's Name" value="">
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="col-sm-12 text-center">
+					<br><button type="submit" class="btn btn-success font-weight-bold" onClick="return userDetailsSubmit()">Submit Changes</button>
+					<div class="alert alert-success" role="alert" id="updateSuccess" style="display: none"></div>
+				</div>
+			</div>
+		</form>
+	</div>
+    <!-- InstanceEndEditable -->
+	<!-- Site Footer -->
+	<footer class="footer">
+		<p>Copyright © Your.Gov 2018. Designed by Anwar Hamill</p>
+	</footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+</body>
+<!-- InstanceEnd --></html>

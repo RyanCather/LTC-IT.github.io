@@ -1,0 +1,103 @@
+/* Responsible for logo size on different displays */
+@media (max-width: 576px){
+	.logo-response{
+		width: 40%;
+		height: auto;
+	}
+	.enviroment{
+		height: auto;
+	}
+}
+@media (min-width: 576px){
+	.logo-response{
+		width: 20%;
+		height: auto;
+	}
+	.enviroment{
+		height: auto;
+	}
+}
+@media (max-width: 1175px) and (min-width: 990px){
+	#portal:before {
+		line-height: 0.5;
+		content: "\A";
+		white-space: pre;
+	}
+}
+
+/* Changes default html layout */
+body{
+	background-color: #eeeeee;
+}
+nav {
+	background: #002d88;
+	text-color: white;
+	}
+nav img{
+	width: 10%;
+	padding-right: 10px;
+}
+footer{
+	padding-top: 20px;
+}
+fieldset{
+	padding: 10px;
+}
+.parliament-form{
+	background-color: #FFFFFF;
+	border: 1px solid green;
+}
+.current-page{
+	pointer-events: none;
+	cursor: default;
+}
+.defence{
+	max-width: 18rem;
+}
+.source{
+	font-size: 14px !important;
+}
+.logo{
+	background: none;
+}
+.enviroment{
+	height: 200px !important;
+}
+.parliament{
+	background-color: black;
+}
+.green{
+	color: green;
+}
+.red{
+	color: red;
+}
+.portal-div-background{
+	background-color: white;
+}
+.width-50{
+	width: 50%;
+	text-align: center;
+}
+.size-12{
+	font-size: 14px;
+	color: red !important;
+}
+.ok{
+	color: orange;
+}
+
+/* Applying custom formatting to Bootstrap CSS */
+.navbar-brand{
+	color: white !important; 
+	font-weight: bold;
+}
+.nav-link{
+	color: white !important;
+}
+.border{
+	border: 1px solid black;
+}
+.fixed-bottom{
+	padding-top: 100px !important;
+}
