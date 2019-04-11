@@ -17,9 +17,9 @@ function checkPin() {
     x = document.getElementById("pin").value;
     // If x is Not a Number or less than one or greater than 10
     if (x == "1234") {
-        text = "Missile Launched! <p><img class=\"img-fluid\" src=\"images/missile.gif\"></p>";
+        text = "<div class=\"pagelayout\"> <p>Missile Launched! </p><p><img class=\"img-fluid\" src=\"../images/missile.gif\"></p></div>";
     } else {
-        text = "Incorrect Pin <p><img class=\"img-fluid\" src=\"images/no.png\"></p>";
+        text = "Incorrect Pin <p><img class=\"img-fluid\" src=\"../images/no.png\"></p>";
     }
     document.getElementById("feedback").innerHTML = text;
 }
