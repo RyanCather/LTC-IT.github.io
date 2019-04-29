@@ -23,3 +23,18 @@ function checkPin() {
     }
     document.getElementById("feedback").innerHTML = text;
 }
+
+
+function heatmap() {
+    var internetService = Math.random(); // Generates a number between 0..1 (but not 1).
+    var colour, status;
+    if (internetService < 0.2) {
+        status = "Down";
+        colour = "Red";
+    } else {
+        status = "Ok";
+        colour = "Black";
+    }
+    document.getElementById("internet").innerHTML = status;
+    document.getElementById('internet').style.color = colour;
+}
