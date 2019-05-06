@@ -38,3 +38,26 @@ function heatmap() {
     document.getElementById("internet").innerHTML = status;
     document.getElementById('internet').style.color = colour;
 }
+
+function vote() {
+
+
+    document.querySelector('input[name="candidate"]:checked').value;
+
+
+/*
+    var radios = document.getElementsByName('candidates');
+
+    for (var i = 0, length = radios.length; i < length; i++)
+    {
+        if (radios[i].checked)
+        {
+            // do whatever you want with the checked radio
+            alert(radios[i].value);
+
+            // only one radio can be logically checked, don't check the rest
+            break;
+        }
+    }
+    */
+}
