@@ -20,4 +20,17 @@
     text-align: left;
 
 }
+.dot {
+    box-sizing: border-box;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    border: .125rem solid;
+    display: inline-block;
+}
 
+.dot--full { background-color: currentColor; }
+
+.red { color: orangered; }
+.yellow { color: gold; }
+.green { color: limegreen; }

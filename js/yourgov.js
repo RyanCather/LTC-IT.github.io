@@ -27,16 +27,28 @@ function checkPin() {
 
 function heatmap() {
     var internetService = Math.random(); // Generates a number between 0..1 (but not 1).
-    var colour, status;
+    var telephoneService = Math.random();
+    var telephoneStatus, internetStatus;
     if (internetService < 0.2) {
-        status = "Down";
-        colour = "Red";
+        internetStatus = "<div class=\"dot  red  dot--full\"></div>"
+    } else if (internetService < 0.6) {
+        internetStatus = "<div class=\"dot  yellow  dot--full\"></div>"
     } else {
-        status = "Ok";
-        colour = "Black";
+        internetStatus = "<div class=\"dot  green  dot--full\"></div>"
     }
-    document.getElementById("internet").innerHTML = status;
-    document.getElementById('internet').style.color = colour;
+
+    if (telephoneService < 0.2) {
+        telephoneStatus = "<div class=\"dot  red  dot--full\"></div>"
+    } else if (telephoneService < 0.6) {
+        telephoneStatus = "<div class=\"dot  yellow  dot--full\"></div>"
+    } else {
+         telephoneStatus = "<div class=\"dot  green  dot--full\"></div>"
+    }
+
+    document.getElementById("telephone").innerHTML = telephoneStatus;
+    document.getElementById("internet").innerHTML = internetStatus;
+
+    setTimeout('location.reload()', 5000);
 }
 
 function vote() {
